@@ -1,0 +1,45 @@
+// Основные стили для header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 80%;
+  z-index: 999;
+
+  .header-logo {
+    width: 220px;
+  }
+
+  .header-links {
+    display: flex;
+    gap: 20px;
+
+    .header-link {
+      position: relative;
+      color: #ddd;
+      font-size: 18px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 2px;
+        background-color: $gold-color;
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        color: $gold-color;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

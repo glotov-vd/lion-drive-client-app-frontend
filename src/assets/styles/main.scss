@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import 'base/variables';
+@import 'base/mixins';
+@import "base/reset";
+
+@import "components/header";
+@import "components/footer";
+
+@import "pages/home";
+@import "pages/cars";
+@import "pages/car";
+@import "pages/contacts";
+
+html {
+  background: $primary-color;
+  color: $main-text-color;
+}

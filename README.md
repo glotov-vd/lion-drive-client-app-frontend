@@ -1,8 +1,33 @@
-# React + Vite
+# lion-drive-client-app-frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Для развертывания локально необходимо:
 
-Currently, two official plugins are available:
+1. С клонировать к себе репозиторий (`git clone https://github.com/glotov-vd/lion-drive-client-app-frontend.git`);
+2. Находясь в ветке **main** создаем новую ветку **<фамилия>_<название вкладки или компонента>** (например, glotov_header);
+3. Делаете `npm install` (если команда не работает, то возможно на компе нет nodejs - ее нужно поставить);
+4. `npm run dev` позволяет запустить проект локально
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Действия после задачи
+
+1. Добавляем только нужные файлы в репозиторий (лучше делать через IDE);
+2. Добавить короткий, но четкий комментарий*
+3. Выполнить `git push` в собственную ветку;
+4. Создать **merge request** в ветку dev и назначить в качестве проверяющего (reviewer) Глотова Владислава (glotov-vd);
+5. Брать в работу следующую задачу
+
+**\*-файл .gitignore не трогать**
+
+## Структура проекта:
+
+* `src/*` - папка с кодом приложения (вся работа ведется в нем)
+* `src/main.jsx` - основная страница проекта (в ней можно настраивать роутинг);
+* `src/assets/*` - папка со стилями (воспринимать scss как обычный css);
+* `src/components/*` - папка с самодельными компонентами (сюда пишем компоненты, из которых собираются страницы);
+* `src/pages/*` - папка с верстками страниц приложения;
+* `src/consts/*` - папка с константами (чаще всего это список кнопок); 
+<br/><br/>
+* `public/*` - папка со статическим контентом (изображения, шрифты, иконки);
+<br/><br/>
+* `.gitignore` - содержит в себе файлы, которые нельзя удалять;
+* `index.html` - основа для нашего приложения (в ней ничего менять не нужно);
+* `package.json` - настройки приложения (номера портов и подключенные библиотеки) (менять тже не нужно);

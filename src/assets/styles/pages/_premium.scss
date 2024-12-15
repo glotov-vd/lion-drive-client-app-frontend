@@ -1,0 +1,8 @@
+.cars {
+    @include page-main;
+
+    .cars-items {
+      display: flex;
+      flex-direction: row;
+    }
+  }

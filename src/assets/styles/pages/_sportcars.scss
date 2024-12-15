@@ -1,0 +1,8 @@
+.sportcars {
+    @include page-main;
+
+    .sportcars-items {
+      display: flex;
+      flex-direction: row;
+    }
+  }

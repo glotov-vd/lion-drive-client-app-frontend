@@ -1,5 +1,6 @@
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import CarTypes from "../components/CarTypes.jsx";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
           <img src="/background.jpg" alt='' />
         </div>
       </div>
+      <CarTypes />
       <Footer />
     </div>
   );

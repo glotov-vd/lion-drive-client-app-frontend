@@ -1,7 +1,7 @@
-.cars {
+.off-road {
     @include page-main;
 
-    .cars-items {
+    .off-road-items {
       display: flex;
       flex-direction: row;
     }

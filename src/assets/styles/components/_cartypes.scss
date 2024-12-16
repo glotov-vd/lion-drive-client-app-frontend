@@ -1,5 +1,34 @@
-.carclasses {
-    display: flex;
+.name_of_component{
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    color: $blue-text-color;
     background-color: $second-bacground-color;
-    width: 80%;
+}
+
+
+.cartype-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $second-bacground-color;
+
+
+  .cartype-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .cartype-item img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  .cartype-text {
+    text-align: center;
+    color: $main-text-color;
+  }
 }

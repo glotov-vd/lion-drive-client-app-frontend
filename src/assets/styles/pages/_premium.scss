@@ -1,7 +1,7 @@
-.cars {
+.premium {
     @include page-main;
 
-    .cars-items {
+    .premium-items {
       display: flex;
       flex-direction: row;
     }

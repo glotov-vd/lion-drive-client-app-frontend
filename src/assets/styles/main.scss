@@ -6,12 +6,15 @@
 
 @import "components/header";
 @import "components/footer";
+@import "components/cartypes";
 
 @import "pages/home";
 @import "pages/cars";
 @import "pages/car";
 @import "pages/contacts";
 @import "pages/rent_conditions";
+@import "pages/cabrio";
+
 
 html {
   background: $primary-color;

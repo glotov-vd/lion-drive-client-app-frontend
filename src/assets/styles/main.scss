@@ -3,6 +3,7 @@
 @import 'base/variables';
 @import 'base/mixins';
 @import "base/reset";
+@import "base/fonts";
 
 @import "components/header";
 @import "components/footer";
@@ -16,4 +17,5 @@
 html {
   background: $primary-color;
   color: $main-text-color;
+  font-family: 'Futura PT', sans-serif;
 }

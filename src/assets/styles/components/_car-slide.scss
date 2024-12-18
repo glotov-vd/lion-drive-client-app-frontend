@@ -1,9 +1,10 @@
 .car-slide {
   position: relative;
   width: 32%;
-  height: 20vw;
+  height: 14vw;
   overflow: hidden;
-  margin: 0 4px;
+  margin: 10px 10px;
+  border-radius: 15px;
 
   &::after {
     content: '';
@@ -17,43 +18,59 @@
     pointer-events: none;
   }
 
-  a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-
-    img {
-      width: 100%;
-      min-width: 100%;
-      min-height: 100%;
-      display: block;
-      object-fit: cover;
-    }
-
-    .car-slide__content {
-      position: absolute;
-      width: 100%;
-      max-width: calc(100% - 90px);
-      bottom: 15px;
-      left: 20px;
-      color: $main-text-color;
-      font-size: 18px;
-      font-weight: 300;
-      z-index: 10;
-
-      .car_name {
-        font-size: 18px;
-        font-weight: 300;
-        line-height: normal;
-      }
-
-      .car_price {
-        line-height: 1;
-        margin-top: 7px;
-        display: block;
-        font-size: 15px;
-        font-weight: 300;
-      }
-    }
+  &__content {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    z-index: 10;
   }
+
+  &__title {
+    color: #fff;
+    font-size: 1.2em;
+  }
+
+  &__price {
+    color: #fff;
+    opacity: 0.6;
+  }
+
+  &__img {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -20px;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  //  .car-slide__content {
+  //    position: absolute;
+  //    width: 100%;
+  //    max-width: calc(100% - 90px);
+  //    bottom: 15px;
+  //    left: 20px;
+  //    color: $main-text-color;
+  //    font-size: 18px;
+  //    font-weight: 300;
+  //    z-index: 10;
+  //
+  //    .car_name {
+  //      font-size: 18px;
+  //      font-weight: 300;
+  //      line-height: normal;
+  //    }
+  //
+  //    .car_price {
+  //      line-height: 1;
+  //      margin-top: 7px;
+  //      display: block;
+  //      font-size: 15px;
+  //      font-weight: 300;
+  //    }
+  //  }
+  //}
 }

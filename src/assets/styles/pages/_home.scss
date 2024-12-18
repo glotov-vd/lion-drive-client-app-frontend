@@ -15,4 +15,18 @@
       object-fit: cover;
     }
   }
+
+  &__title {
+    color: white;
+    font-size: 3.5em;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 60%;
+    z-index: 100;
+  }
+
+  .cars__gallery {
+    margin-top: 600px;
+  }
 }

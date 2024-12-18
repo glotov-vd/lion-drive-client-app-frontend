@@ -95,7 +95,7 @@ const Car = () => {
       </div>
 
       <div className="car__create-request-container">
-        <CreateRequestForm />
+        <CreateRequestForm carName={carInfo.name}/>
       </div>
     </div>
   );

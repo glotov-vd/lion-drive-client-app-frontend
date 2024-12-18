@@ -8,10 +8,10 @@ const CarSlide = ({ car }) => {
     <div className="car-slide">
       <Link to={`/cars/${car.id}`}>
         <div className="car-slide__content">
-          <div>
+          <div className="car-slide__title">
             <span>{name}</span>
           </div>
-          <span className="car_price">{price}</span>
+          <span className="car-slide__price">{price} ₽ / сут.</span>
         </div>
         <img className="car-slide__img" src={img} alt='' />
       </Link>

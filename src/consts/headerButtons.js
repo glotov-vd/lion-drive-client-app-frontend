@@ -1,6 +1,6 @@
 export const headerButtons = [
   { text: 'Автопарк', href: '/cars' },
-  { text: 'Условия', href: '/rent-conditions' },
+  // { text: 'Условия', href: '/rent-conditions' },
   { text: 'Контакты', href: '/contacts' },
 ];
 

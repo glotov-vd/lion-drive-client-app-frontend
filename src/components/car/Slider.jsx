@@ -11,7 +11,7 @@ const Slider = ({ carInfo }) => {
   return (
     <div className="slider">
       <div className="image-container">
-        <img src="/tmp/img_4.png" alt="" />
+        <img src="/tmp/img_3.png" alt="" />
       </div>
       <div className="slider__content">
         <h1 className="slider__info-title">Аренда {carInfo.name}</h1>

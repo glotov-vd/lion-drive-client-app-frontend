@@ -1,10 +1,61 @@
 .cars {
   @include page-main;
+  height: 100%;
+  width: 100%;
+  background: white;
 
-  &-gallery {
+  &__header {
+    position: absolute;
+  }
+
+  &__filters {
+    background: #ffffff;
     width: 100%;
+    height: 10vh;
+
+    h3 {
+      color: $primary-color;
+      font-size: 2em;
+    }
+  }
+
+  .back__image {
+    position: relative;
+    width: 100%;
+    height: 40%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      bottom: 0;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h3 {
+      position: absolute;
+      top: 250px;
+      left: 5%;
+      z-index: 50;
+      font-size: 3em;
+      color: white;
+    }
+  }
+
+  &__gallery {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 8px;
+    background: #ffffff;
+    width: 100%;
   }
 }

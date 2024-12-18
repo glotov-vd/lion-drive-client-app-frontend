@@ -20,6 +20,30 @@ const router = createBrowserRouter([
     element: <Cars />,
   },
   {
+    path: '/cars/off-road',
+    element: <Cars />,
+  },
+  {
+    path: '/cars/cabriolet',
+    element: <Cars />,
+  },
+  {
+    path: '/cars/coupe',
+    element: <Cars />,
+  },
+  {
+    path: '/cars/sport-cars',
+    element: <Cars />,
+  },
+  {
+    path: '/cars/electric',
+    element: <Cars />,
+  },
+  {
+    path: '/cars/premium',
+    element: <Cars />,
+  },
+  {
     path: '/cars/:id',
     element: <Car />,
   },

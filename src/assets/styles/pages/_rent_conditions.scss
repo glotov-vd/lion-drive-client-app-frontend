@@ -1,11 +1,5 @@
 .rent-conditions {
-  color: #1a1a1a;
+  @include page-main
 
-  h3 {
-    color: #ffffff;
-  }
-}
 
-.flex {
-  display: flex;
 }

@@ -1,16 +1,12 @@
-import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
+import Header from "../components/header/Header.jsx";
 
 const Home = () => {
   return (
-    <div className="">
-      <div className="home">
-        <Header />
-        <div className="image-container">
-          <img src="/background.jpg" alt='' />
-        </div>
+    <div className="home">
+      <Header/>
+      <div className="image-container">
+        <img src="/background.jpg" alt=''/>
       </div>
-      <Footer />
     </div>
   );
 }
